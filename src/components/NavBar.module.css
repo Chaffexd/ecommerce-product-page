@@ -1,0 +1,41 @@
+li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 1em;
+    cursor: pointer;
+    color: hsl(219, 9%, 45%);
+    font-weight: 500;
+}
+
+li:hover {
+    text-decoration: underline;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+.logoImg {
+    margin-right: 3em;
+}
+
+.cart {
+    cursor: pointer;
+}
+
+.avatar {
+    height: 50px;
+    width: 50px;
+    margin-left: 2em;
+}
+
+.navItems, .profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile {
+    justify-content: flex-end;
+}
