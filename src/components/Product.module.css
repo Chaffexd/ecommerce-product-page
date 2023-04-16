@@ -1,0 +1,96 @@
+.productImage {
+    width: 50%;
+}
+
+.productInfo {
+    width: 50%;
+}
+
+.sneakerCompany {
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+}
+
+.sneakerTitle {
+    font-size: 3em;
+}
+
+.sneakerText {
+    color: hsl(219, 9%, 45%);
+}
+
+.cost {
+    font-size: 2em;
+    font-weight: 700;
+    display: inline;
+    margin: .5em .5em .5em 0;
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+}
+
+span {
+    display: inline-block;
+    background-color: hsl(25, 100%, 94%);
+    color: hsl(26, 100%, 55%);
+    border-radius: 5px;
+    width: 55px;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 700;
+}
+
+.totalPrice {
+    color: hsl(219, 9%, 45%);
+    text-decoration: line-through;
+    font-weight: 700;
+    margin-bottom: 2em;
+}
+
+.sneakerAmountContainer {
+    display: flex;
+}
+
+.cartDiv {
+    background-color: hsl(223, 64%, 98%);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: .5em;
+    margin-right: 1.5em;
+}
+
+.quantity {
+    color: black;
+    background-color: hsl(223, 64%, 98%);
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.button {
+    border: none;
+    background-color: hsl(223, 64%, 98%);
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.addToCartDiv {
+    background-color: hsl(26, 100%, 55%);
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+    border-radius: 5px;
+    width: 10em;
+}
+
+.addToCartDiv button {
+    border: none;
+    background-color: hsl(26, 100%, 55%);
+    display: flex;
+    align-items: center;
+    color: white;
+}
