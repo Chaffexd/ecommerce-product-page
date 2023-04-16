@@ -1,22 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import cart from '../../public/images/icon-cart.svg';
 import classes from './Product.module.css';
 
-const Product = () => {
-    const [quantity, setQuantity] = useState(0);
-
-    const handleIncrement = () => {
-        setQuantity(quantity + 1);
-    };
-
-    const handleDecrement = () => {
-        if(quantity > 0) {
-            setQuantity(quantity - 1);
-        }
-        return;
-    };
-
+const Product = (props) => {
 
     return (
         <>
@@ -39,11 +26,11 @@ const Product = () => {
                 </div>
                 <div className={classes.sneakerAmountContainer}>
                     <div className={classes.cartDiv}>
-                        <button className={classes.button} onClick={handleDecrement}>-</button>
-                        <span className={classes.quantity}>{quantity}</span>
-                        <button className={classes.button} onClick={handleIncrement}>+</button>
+                        <button className={classes.button} onClick={props.handleDecrement}>-</button>
+                        <span className={classes.quantity}>{props.quantity}</span>
+                        <button className={classes.button} onClick={props.handleIncrement}>+</button>
                     </div>
-                    <div className={classes.addToCartDiv}>
+                    <div className={classes.addToCartDiv} onClick={props.addToCartHandler}>
                         <button><img src={cart} />Add to cart</button>
                     </div>
                 </div>

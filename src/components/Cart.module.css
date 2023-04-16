@@ -1,0 +1,7 @@
+.background {
+    background-color: pink;
+    position: absolute;
+    width: 20em;
+    height: 15em;
+    top: 90px;
+}
