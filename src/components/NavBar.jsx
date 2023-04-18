@@ -30,11 +30,11 @@ const navItems = [
     }
 ];
 
-const NavBar = () => {
+const NavBar = (props) => {
     const [cartIsShown, setCartIsShown] = useState(false);
-    const cartContext = useContext(CartContext);
+    const cartCtx = useContext(CartContext);
 
-    const numberOfCartItems = cartContext.item.reduce((currentNumber, item) => {
+    const numberOfCartItems = cartCtx.items.reduce((currentNumber, item) => {
         return currentNumber + item.amount;
     }, 0);
 

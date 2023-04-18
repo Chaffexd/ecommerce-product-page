@@ -75,6 +75,7 @@ span {
     color: hsl(26, 100%, 55%);
     font-weight: 700;
     font-size: 1.5em;
+    cursor: pointer;
 }
 
 .addToCartDiv {
@@ -93,4 +94,14 @@ span {
     display: flex;
     align-items: center;
     color: white;
+}
+
+.productLi {
+    color: black;
+    text-decoration: none;
+    cursor: default;
+}
+.productLi:hover {
+    cursor: default;
+    text-decoration: none;
 }
